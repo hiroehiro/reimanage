@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+header {
+    background-image: url("../img/toppage-header.jpg");
+    background-size: cover;
+
+}
+
+.toppage-header{
+    color: brown;
+    text-align: center;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.btn-flat-border-1 {
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 10rem 5rem 10rem 17rem;
+    text-decoration: none;
+    color: #67c5ff;
+    border: solid 2px #67c5ff;
+    border-radius: 2px;
+    background-image: url("../img/kaden_reizouko.png");
+    background-repeat: no-repeat;
+  }
+  
+  .btn-flat-border-1:hover {
+    background: #67c5ff;
+    color: white;
+    background-image: url("../img/kaden_reizouko_open.png");
+    background-repeat: no-repeat;
+  }
+
+  .btn-flat-border-2 {
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 10rem 5rem 10rem 17rem;
+    text-decoration: none;
+    color: #67c5ff;
+    border: solid 2px #67c5ff;
+    border-radius: 2px;
+    background-image: url("../img/bunbougu_memo.png");
+    background-repeat: no-repeat;
+  }
+  
+  .btn-flat-border-2:hover {
+    background: #67c5ff;
+    color: white;
+    background-image: url("../img/bunbougu_memo.png");
+    background-repeat: no-repeat;
+
+  }

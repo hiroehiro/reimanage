@@ -1,0 +1,16 @@
+{% load static %}
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="{% static 'css/mystyle.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+{% block header %}{% endblock %}
+
+{% block main %}{% endblock %}
+</body>
