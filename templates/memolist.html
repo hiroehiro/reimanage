@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <header>
+    <h1 class="toppage-header">買い物メモ一覧</h1>
+  </header>
+{% endblock %}
+
+{% block main %}
+
+  {% for item in object_list %}
+  <div class="memolistcontainor">
+    <div class="memolistbox">
+      <p>
+        <div class="goodsbox">
+          {{item.goods}}
+        </div>
+
+        <div class="goodsbox">
+          {{item.goods_number}}
+        </div>
+
+        <input type="checkbox" id="buy">
+        <label for="buy">買った</label>
+        
+        <form method="post" action="{% url 'deletememo' item.pk %}">{% csrf_token %}
+          <button class="deletebotan" type="submit" onclick='return confirm("本当に削除しますか？");'>削除</button>
+        </form>
+
+      </p>
+    </div> 
+  </div>
+  {% endfor %}
+
+{% endblock %}
